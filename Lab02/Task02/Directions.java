@@ -8,37 +8,37 @@ public class Directions {
 
         NORTH("Go South"){
             String getCurrentPosition(){
-                return String.valueOf(this);
+                return "I am in "+String.valueOf(this);
             }
 
             String NextMove(){
-                return this.getMessage();
+                return "I have to "+this.getMessage();
             }
 
 
         },South("Go North"){
             String getCurrentPosition(){
-                return String.valueOf(this);
+                return "I am in "+String.valueOf(this);
             }
 
             String NextMove(){
-                return this.getMessage();
+                return "I have to "+this.getMessage();
             }
         },WEST("Go East"){
             String getCurrentPosition(){
-                return String.valueOf(this);
+                return "I am in "+String.valueOf(this);
             }
 
             String NextMove(){
-                return this.getMessage();
+                return "I have to "+this.getMessage();
             }
         },EAST("Go West"){
             String getCurrentPosition(){
-                return String.valueOf(this);
+                return "I am in "+String.valueOf(this);
             }
 
             String NextMove(){
-                return this.getMessage();
+                return "I have to "+this.getMessage();
             }
         };
 
