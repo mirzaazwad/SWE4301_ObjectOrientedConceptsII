@@ -17,9 +17,13 @@ public class MoneyTest {
     }
 
     @Test
-    public void testCurrencyEquals(){
-        assertEquals(new Franc(10),new Franc(10));
+    public void testCurrencyTypeEquals(){
+
+        assertEquals(new Franc(10),new Dollar(10));
     }
 
-
+    @Test
+    public void currencyEquals(){
+        assertEquals(new Franc(10),new Franc(10));
+    }
 }
