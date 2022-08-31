@@ -5,6 +5,6 @@ public class Money {
     }
 
     public boolean equals(Object a){//Object is not by default a Franc object
-        return amount==((Money)a).getAmount();
+        return amount==((Money)a).getAmount() && this.getClass()==a.getClass();
     }
 }
