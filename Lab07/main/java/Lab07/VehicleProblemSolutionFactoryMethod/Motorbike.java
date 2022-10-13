@@ -10,6 +10,7 @@ public class Motorbike extends Vehicle{
     }
     @Override
     public int perHeadFare(){
-        return Math.max(25, distanceKM * 20) / numberOfPassengers;
+        int fare=Math.max(25, distanceKM * 20) / numberOfPassengers;
+        return fare-fare%5;
     }
 }

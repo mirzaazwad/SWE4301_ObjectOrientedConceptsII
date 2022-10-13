@@ -12,6 +12,7 @@ public class SevenSeater extends Vehicle{
 
     @Override
     public int perHeadFare(){
-        return distanceKM<10 ? 300 / numberOfPassengers:distanceKM * 30 / numberOfPassengers;
+        int fare=distanceKM<10 ? 300 / numberOfPassengers:distanceKM * 30 / numberOfPassengers;
+        return fare-fare%5;
     }
 }
