@@ -1,9 +1,9 @@
 # **LAB 08 TASKS**
 
-# ISP
+## ISP
 Two ISP violation diagrams are given.
 
-## Problem 1
+###### Problem 1
 A violation of ISP is given in the following figure.
 
 
@@ -12,7 +12,7 @@ A violation of ISP is given in the following figure.
 
 Apply ISP and write the solution code
 
-## Problem 2
+###### Problem 2
 
 
 ![ISP Violation](ISPvio2.png)
@@ -20,10 +20,10 @@ Apply ISP and write the solution code
 
 Apply ISP and write the solution code
 
-# SRP
+## SRP
 Code examples are given that violates SRP
 
-## Example
+###### Example
 You are given one example of SRP. Implement the code
 ```java
 public class Employee {
@@ -69,7 +69,7 @@ public class FinIncomeTaxCalculation {
     }
 }
 ```
-## Problem 1
+###### Problem 1
 A violation of SRP is given in the following figure.
 
 ![ISP Violation](SRPvio.png)
