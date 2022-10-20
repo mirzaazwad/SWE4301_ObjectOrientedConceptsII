@@ -1,4 +1,4 @@
-# __*LAB 08 TASKS*__
+# **LAB 08 TASKS**
 
 # ISP
 Two ISP violation diagrams are given.
