@@ -77,7 +77,7 @@ A violation of SRP is given in the following figure.
 
 Apply SRP and write the solution code
 
-## Problem 2
+###### Problem 2
 A violation of SRP is given in the following figure.
 
 
