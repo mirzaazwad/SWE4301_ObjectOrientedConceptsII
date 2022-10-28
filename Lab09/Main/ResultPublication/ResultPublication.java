@@ -40,7 +40,7 @@ public class ResultPublication {
         return temp;
     }
 
-    public boolean ExportData(ExportType export){
+    public boolean ExportData(Export export){
         try{
             export.CreateFile();
             export.export(this.studentList);
