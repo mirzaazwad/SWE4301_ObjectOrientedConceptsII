@@ -21,7 +21,7 @@ public class ExportCSV implements ExportType {
     public void export(List<Student> list) throws IOException{
         BufferedWriter write=new BufferedWriter(new FileWriter(filename,true));
         for(Student student:list){
-            write.append(student.studentID+","+student.name+","+String.valueOf(student.program)+","+String.valueOf(student.CGPA)+"\n");
+            write.append(student.studentID+","+student.name+","+String.valueOf(student.program)+","+String.format("%.2f",student.CGPA)+"\n");
         }
         write.close();
     }
