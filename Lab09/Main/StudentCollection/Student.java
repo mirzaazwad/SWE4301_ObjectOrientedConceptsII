@@ -19,6 +19,7 @@ public class Student{
         this.CGPA=CGPA;
     }
 
+
     public String Study(){
         return this.studentID+" is studying";
     }
