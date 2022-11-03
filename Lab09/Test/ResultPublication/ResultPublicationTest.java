@@ -112,7 +112,8 @@ public class ResultPublicationTest {
         ResultPublication rps=new ResultPublication(studentEnrollment.studentList);
         ExportXML export=new ExportXML("file.xml");
         assertTrue(rps.ExportData(export));
-        assertEquals(export.readExportedFile(),"<Student>\n" +
+        assertEquals(export.readExportedFile(),"" +"<xml>\n"+
+                "<Student>\n" +
                 "<studentID>123456787</studentID>\n" +
                 "<name>Rahim</name>\n" +
                 "<program>SWE</program>\n" +
@@ -129,7 +130,8 @@ public class ResultPublicationTest {
                 "<name>Barkat</name>\n" +
                 "<program>SWE</program>\n" +
                 "<CGPA>3.00</CGPA>\n" +
-                "</Student>\n");
+                "</Student>\n"+
+                "</xml>\n");
     }
 
 

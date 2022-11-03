@@ -15,6 +15,7 @@ public class ExportXML extends Export{
         BufferedWriter write=new BufferedWriter(new FileWriter(this.filename,true));
         Field[] fields=Student.class.getFields();
         Class className=Student.class;
+        write.append("<xml>\n");
         for(Student student:list){
             write.append("<"+className.getSimpleName()+">\n");
             for(Field field:fields){
@@ -36,6 +37,7 @@ public class ExportXML extends Export{
             }
             write.append("</"+className.getSimpleName()+">\n");
         }
+        write.append("</xml>\n");
         write.close();
     }
 }
