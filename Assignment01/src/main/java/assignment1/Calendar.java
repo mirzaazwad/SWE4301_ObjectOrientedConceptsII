@@ -13,12 +13,8 @@ public class Calendar {
     }
 
     public Calendar(String input) throws CalendarException{
-        try {
-            String[] date = input.split("/");
-            set_Calendar(Integer.valueOf(date[0]),Integer.valueOf(date[1]),Integer.valueOf(date[2]));
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        String[] date = input.split("/");
+        set_Calendar(Integer.valueOf(date[0]),Integer.valueOf(date[1]),Integer.valueOf(date[2]));
     }
 
     private void  set_Calendar(Integer day,Integer month,Integer year) throws CalendarException{
