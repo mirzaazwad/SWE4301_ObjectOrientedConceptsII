@@ -1,3 +1,4 @@
+package UnsynchronizedDataSharing;
 import java.util.Random;
 
 public class SimpleArray//NOT THREAD SAFE
@@ -33,5 +34,6 @@ public class SimpleArray//NOT THREAD SAFE
 			arrayString+=(array[i]+" ");
 			return arrayString;
 		}
+		return arrayString;
 	}
 }
